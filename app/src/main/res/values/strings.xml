@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GoLine</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="fragment_consultorio">Fragment Consultório</string>
+    <string name="fragment_sobre">Fragment Sobre</string>
+    <string name="fragment_contato">Fragment Contato</string>
+
+    <string-array name="titles_tab">
+        <item>Consultórios</item>
+        <item>Sobre</item>
+        <item>Contato</item>
+    </string-array>
+    
+</resources>
