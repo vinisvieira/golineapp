@@ -5,6 +5,14 @@
     <string name="fragment_consultorio">Fragment Consultório</string>
     <string name="fragment_sobre">Fragment Sobre</string>
     <string name="fragment_contato">Fragment Contato</string>
+    <string name="text_view_contato">Contato</string>
+    <string name="text_view_email">Email:</string>
+    <string name="text_view_email_address">suporte@goline.com</string>
+    <string name="text_view_phone_number"> 0800&#8211;081 6969</string>
+    <string name="text_view_tech_problem">Problemas Tecnicos? Entre em Contato!</string>
+    <string name="text_view_science_contact">Contato GoLine</string>
+    <string name="text_view_choose_email">Escolhe um app:</string>
+
 
     <string-array name="titles_tab">
         <item>Consultórios</item>

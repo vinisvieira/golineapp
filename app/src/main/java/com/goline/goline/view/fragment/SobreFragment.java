@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 
 import com.goline.goline.R;
 
@@ -27,6 +28,11 @@ public class SobreFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        String url = "http://192.168.50.160:8080/GoLine_1.0/quemsomosapp.html";
+        WebView view1 = (WebView) mView.findViewById(R.id.webView);
+        view1.getSettings().setJavaScriptEnabled(true);
+        view1.loadUrl(url);
     }
 
 }
