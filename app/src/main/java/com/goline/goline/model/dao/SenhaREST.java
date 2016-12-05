@@ -41,7 +41,7 @@ public class SenhaREST {
             serverResponseMessage = StringUtil.streamToString(httpURLConnection.getInputStream());
 
         } catch (IOException ioe) {
-            Log.e(Constants.TAG, "getConsultorios -> " + ioe.getMessage());
+            Log.e(Constants.TAG, "getSenha -> " + ioe.getMessage());
         }
 
         return new Gson().fromJson(serverResponseMessage, Senha.class);

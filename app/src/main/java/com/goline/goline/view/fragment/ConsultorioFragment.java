@@ -1,6 +1,7 @@
 package com.goline.goline.view.fragment;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import android.view.ViewGroup;
 import com.goline.goline.R;
 import com.goline.goline.model.dao.ConsultorioREST;
 import com.goline.goline.model.entity.Consultorio;
+import com.goline.goline.view.activty.SenhaActivity;
 import com.goline.goline.view.adapter.ConsultoriosRecyclerView;
 
 /**
@@ -44,7 +46,6 @@ public class ConsultorioFragment extends Fragment {
         consultorioREST = new ConsultorioREST();
         ConsultorioAsyncTask consultorioAsyncTask = new ConsultorioAsyncTask();
         consultorioAsyncTask.execute();
-
     }
 
     private void mostrarConsultorios(Consultorio[] consultorios) {

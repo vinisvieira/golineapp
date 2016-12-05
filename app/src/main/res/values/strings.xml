@@ -12,6 +12,10 @@
     <string name="text_view_tech_problem">Problemas Tecnicos? Entre em Contato!</string>
     <string name="text_view_science_contact">Contato GoLine</string>
     <string name="text_view_choose_email">Escolhe um app:</string>
+    <string name="text_view_senha">Proxima Senha</string>
+    <string name="text_view_consultorio">Consultório</string>
+    <string name="text_view_consultorionum">02</string>
+    <string name="text_view_senhanum">01</string>
 
 
     <string-array name="titles_tab">
