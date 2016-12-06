@@ -27,7 +27,8 @@ public class SenhaREST {
 
         try {
 
-            urlConnection = new URL("http://192.168.50.160:8080/GoLine_1.0/PegarSenhaGson?id="+id);
+            //urlConnection = new URL("http://192.168.25.5:8080/GoLine_1.0/PegarSenhaGson?id="+id);
+            urlConnection = new URL("http://10.0.3.2:8080:8080/GoLine_1.0/PegarSenhaGson?id="+id);
 
             httpURLConnection = (HttpURLConnection) urlConnection.openConnection();
             httpURLConnection.setReadTimeout(15 * SECONDS);

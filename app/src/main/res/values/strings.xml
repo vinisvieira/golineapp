@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">GoLine</string>
     <string name="action_settings">Settings</string>
+    <string name="app_senha">Senha Consultorio</string>
 
     <string name="fragment_consultorio">Fragment Consultório</string>
     <string name="fragment_sobre">Fragment Sobre</string>
@@ -11,7 +12,7 @@
     <string name="text_view_phone_number"> 0800&#8211;081 6969</string>
     <string name="text_view_tech_problem">Problemas Tecnicos? Entre em Contato!</string>
     <string name="text_view_science_contact">Contato GoLine</string>
-    <string name="text_view_choose_email">Escolhe um app:</string>
+    <string name="text_view_choose_email">Escolha um app:</string>
     <string name="text_view_senha">Proxima Senha</string>
     <string name="text_view_consultorio">Consultório</string>
     <string name="text_view_consultorionum">02</string>

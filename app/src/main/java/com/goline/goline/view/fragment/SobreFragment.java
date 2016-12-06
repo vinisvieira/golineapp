@@ -29,6 +29,7 @@ public class SobreFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+       //String url = "http://192.168.25.5:8080/GoLine_1.0/quemsomosapp.html";
         String url = "http://10.0.3.2:8080/GoLine_1.0/quemsomosapp.html";
         WebView view1 = (WebView) mView.findViewById(R.id.webView);
         view1.getSettings().setJavaScriptEnabled(true);
