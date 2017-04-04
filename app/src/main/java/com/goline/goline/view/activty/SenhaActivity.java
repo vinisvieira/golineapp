@@ -1,11 +1,12 @@
 package com.goline.goline.view.activty;
 
+
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.goline.goline.R;
@@ -30,6 +31,12 @@ public class SenhaActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_senha);
+
+        ActionBar actionBar = getSupportActionBar();
+
+        // Método que ativa o botão Up Navigation
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         senhaREST = new SenhaREST();
         idConsultorio = getIntent().getLongExtra("senha", 0L);
         nomeConsultorio = getIntent().getStringExtra("nome");
@@ -46,7 +53,8 @@ public class SenhaActivity extends AppCompatActivity {
         }
 
         @Override
-        protected Senha doInBackground(Void... params) {return senhaREST.getSenha(idConsultorio);
+        protected Senha doInBackground(Void... params) {
+            return senhaREST.getSenha(idConsultorio);
         }
 
         @Override
@@ -59,5 +67,17 @@ public class SenhaActivity extends AppCompatActivity {
             senhaChamada.setText(chamada);
             mProgressDialog.dismiss();
         }
+    }
+
+    // Esse método da Activity é chamado sempre que um botão da ActionBar é clicado
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        // Estou verificando pelo Id do botão clicado se corresponde ao botão Up Navigation
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
