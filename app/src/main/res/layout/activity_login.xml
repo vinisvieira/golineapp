@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.goline.goline.LoginActivity">
+    android:background="@color/colorPrimary"
+    tools:context="com.goline.goline.view.activty.LoginActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_go" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe seus dados de acesso para continuar."
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/emaileditTxt"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:hint=" Email"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:background="@color/cardview_light_background"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/senhaEditTxt"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/senhaEditTxt"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:hint=" Senha"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:background="@color/cardview_light_background"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/emaileditTxt"
+        android:layout_alignStart="@+id/emaileditTxt" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@color/cardview_light_background"
+        android:text="Login"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/button"
+        android:layout_above="@+id/fb"
+        android:layout_alignLeft="@+id/senhaEditTxt"
+        android:layout_alignStart="@+id/senhaEditTxt" />
+
+    <Button
+        android:id="@+id/fb"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="#416BC1"
+        android:onClick="onClick"
+        android:text="Entre com FaceBook"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/senhaEditTxt"
+        android:layout_alignStart="@+id/senhaEditTxt"
+        android:layout_marginBottom="52dp" />
+
+</RelativeLayout>

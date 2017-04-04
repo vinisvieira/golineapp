@@ -26,7 +26,7 @@
             android:label="@string/app_senha"
             android:theme="@style/AppTheme" />
         <activity android:name=".view.activty.CadastroUsuarioActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".view.activty.LoginActivity"></activity>
     </application>
 
 </manifest>
