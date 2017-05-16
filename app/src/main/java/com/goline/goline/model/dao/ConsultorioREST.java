@@ -27,10 +27,10 @@ public class ConsultorioREST {
 
         try {
 
-            urlConnection = new URL("http://192.168.50.44:8080/GoLine_1.0/ListarConsultorios");
-            //urlConnection = new URL("http://192.168.25.5:8080/GoLine_1.0/ListarConsultorios");
-            //urlConnection = new URL("http://10.82.103.68:8080/GoLine_1.0/ListarConsultorios");
-            //urlConnection = new URL("http://10.0.3.2:8080/GoLine_1.0/ListarConsultorios");
+            //urlConnection = new URL("http://192.168.50.44:8080/goline_2.0/api/consultorio/");
+            urlConnection = new URL("http://192.168.25.5:8080/goline_2.0/api/consultorio/");
+            //urlConnection = new URL("http://10.82.103.68:8080/goline_2.0/api/consultorio/");
+            //urlConnection = new URL("http://10.0.3.2:8080/goline_2.0/api/consultorio/");
 
             httpURLConnection = (HttpURLConnection) urlConnection.openConnection();
             httpURLConnection.setReadTimeout(15 * SECONDS);

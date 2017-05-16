@@ -12,11 +12,15 @@ public class Consultorio {
     private String nome;
     private String rua;
     private String bairro;
+    private String cidade;
     private String numero;
     private String cep;
-    private boolean statusFuncionamento;
+    private String especialidade;
     private boolean status;
+    private boolean statusFuncionamento;
+    private List<Paciente> pacientes;
     private List<Senha> senhas;
+    private List<Agendamento> agendamento;
 
     public Long getId() {
         return id;
@@ -50,6 +54,14 @@ public class Consultorio {
         this.bairro = bairro;
     }
 
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
     public String getNumero() {
         return numero;
     }
@@ -66,12 +78,12 @@ public class Consultorio {
         this.cep = cep;
     }
 
-    public boolean isStatusFuncionamento() {
-        return statusFuncionamento;
+    public String getEspecialidade() {
+        return especialidade;
     }
 
-    public void setStatusFuncionamento(boolean statusFuncionamento) {
-        this.statusFuncionamento = statusFuncionamento;
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
     }
 
     public boolean isStatus() {
@@ -82,12 +94,36 @@ public class Consultorio {
         this.status = status;
     }
 
+    public boolean isStatusFuncionamento() {
+        return statusFuncionamento;
+    }
+
+    public void setStatusFuncionamento(boolean statusFuncionamento) {
+        this.statusFuncionamento = statusFuncionamento;
+    }
+
     public List<Senha> getSenhas() {
         return senhas;
     }
 
     public void setSenhas(List<Senha> senhas) {
         this.senhas = senhas;
+    }
+
+    public List<Paciente> getPacientes() {
+        return pacientes;
+    }
+
+    public void setPacientes(List<Paciente> pacientes) {
+        this.pacientes = pacientes;
+    }
+
+    public List<Agendamento> getAgendamento() {
+        return agendamento;
+    }
+
+    public void setAgendamento(List<Agendamento> agendamento) {
+        this.agendamento = agendamento;
     }
 
     @Override
@@ -97,11 +133,15 @@ public class Consultorio {
                 ", nome='" + nome + '\'' +
                 ", rua='" + rua + '\'' +
                 ", bairro='" + bairro + '\'' +
+                ", cidade='" + cidade + '\'' +
                 ", numero='" + numero + '\'' +
                 ", cep='" + cep + '\'' +
-                ", statusFuncionamento=" + statusFuncionamento +
+                ", especialidade='" + especialidade + '\'' +
                 ", status=" + status +
+                ", statusFuncionamento=" + statusFuncionamento +
+                ", pacientes=" + pacientes +
                 ", senhas=" + senhas +
+                ", agendamento=" + agendamento +
                 '}';
     }
 }

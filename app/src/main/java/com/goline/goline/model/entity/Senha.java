@@ -10,8 +10,8 @@ public class Senha {
 
     private Long id;
     private int valorChamada;
-    private boolean statusChamada;
     private boolean status;
+    private boolean statusChamada;
     private Date dataInicio;
     private Date dataFinal;
     private Consultorio consultorio;
