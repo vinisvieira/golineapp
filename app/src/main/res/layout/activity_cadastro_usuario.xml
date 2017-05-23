@@ -1,11 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.goline.goline.view.activty.CadastroUsuarioActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        tools:context="com.goline.goline.view.activty.CadastroUsuarioActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/logo_go" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="@string/info_login"
+        android:textColor="@color/cardview_light_background" />
+
+    <EditText
+        android:id="@+id/nomeEditTxt"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/cardview_light_background"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:hint="@string/nome" />
+
+    <EditText
+        android:id="@+id/emailEditTxt"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/cardview_light_background"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:hint="@string/email" />
+
+    <EditText
+        android:id="@+id/telefoneEditTxt"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/cardview_light_background"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:drawableStart="@drawable/ic_phone_black_24dp"
+        android:hint="@string/telefone" />
+
+    <EditText
+        android:id="@+id/senhaEditTxt"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        android:hint="@string/senha"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+        android:background="@color/cardview_light_background"/>
 
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/cardview_light_background"
+        android:onClick="signIn"
+        android:text="@string/bnt_cadastro"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/button"/>
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/email_sing_in_facebook_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#416BC1"
+        android:onClick="sendLoginFacebookData"
+        android:text="@string/bnt_login_com_facebook_cadastro"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

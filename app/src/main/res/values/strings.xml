@@ -18,6 +18,16 @@
     <string name="text_view_consultorio">Consultório</string>
     <string name="text_view_consultorionum">02</string>
     <string name="text_view_senhanum">01</string>
+    <string name="facebook_app_id">1051790581587987</string>
+    <string name="info_login">Informe seus dados de acesso para continuar.</string>
+    <string name="email"> Email</string>
+    <string name="nome">Nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="senha"> Senha</string>
+    <string name="bnt_login">Login</string>
+    <string name="bnt_cadastro">Cadastrar</string>
+    <string name="bnt_login_com_facebook">Login com facebook</string>
+    <string name="bnt_login_com_facebook_cadastro">Entrar com facebook</string>
 
 
     <string-array name="titles_tab">

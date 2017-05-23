@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1030772733558",
+    "firebase_url": "https://goline-edad1.firebaseio.com",
+    "project_id": "goline-edad1",
+    "storage_bucket": "goline-edad1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030772733558:android:90a1271aca6c0fb8",
+        "android_client_info": {
+          "package_name": "com.goline.goline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030772733558-qfqe5ealrv7l43nrbeqjtld95ud04iaf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goline.goline",
+            "certificate_hash": "5e72e85c3def261a6f2355e04f32a4729681960c"
+          }
+        },
+        {
+          "client_id": "1030772733558-b09g8h9o3c29bufqoddrfgqi3d119m1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlt85jdAWXNbXOKXqfs0it1itOcv_nlUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030772733558-b09g8h9o3c29bufqoddrfgqi3d119m1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
