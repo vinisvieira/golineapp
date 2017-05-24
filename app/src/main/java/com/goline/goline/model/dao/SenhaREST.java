@@ -27,7 +27,7 @@ public class SenhaREST {
 
         try {
 
-            //urlConnection = new URL("http://192.168.50.44:8080/goline_2.0/api/senha/android/"+id);
+            //urlConnection = new URL("http://192.168.23.47:8080/goline_2.0/api/senha/android/"+id);
             urlConnection = new URL("http://192.168.25.5:8080/goline_2.0/api/senha/android/"+id);
             //urlConnection = new URL("http://10.82.103.68:8080/goline_2.0/api/senha/android/"+id);
             //urlConnection = new URL("http://10.0.3.2:8080:8080/goline_2.0/api/senha/android/"+id);

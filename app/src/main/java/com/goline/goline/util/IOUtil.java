@@ -12,12 +12,10 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 /**
- * Created by wolney on 11/04/17.
+ * Created by Vinícius Lindemberg on 22/05/17.
  */
 
 public class IOUtil {
-
-    private static final String TAG = "GoLine.IOUtil";
 
     public static void writeString(OutputStream out, String string) {
         writeBytes(out, string.getBytes());
@@ -33,7 +31,7 @@ public class IOUtil {
             out.flush();
             out.close();
         } catch (IOException e) {
-            Log.e(TAG, e.getMessage(), e);
+            Log.e(Constants.TAG, e.getMessage(), e);
         }
     }
 
@@ -44,7 +42,7 @@ public class IOUtil {
             out.flush();
             out.close();
         } catch (IOException e) {
-            Log.e(TAG, e.getMessage(), e);
+            Log.e(Constants.TAG, e.getMessage(), e);
         }
     }
 
@@ -55,7 +53,7 @@ public class IOUtil {
         } catch (FileNotFoundException e) {
             return null;
         } catch (IOException e) {
-            Log.e(TAG, e.getMessage(), e);
+            Log.e(Constants.TAG, e.getMessage(), e);
             return null;
         }
     }
@@ -71,7 +69,7 @@ public class IOUtil {
         } catch (FileNotFoundException e) {
             return null;
         } catch (IOException e) {
-            Log.e(TAG, e.getMessage(), e);
+            Log.e(Constants.TAG, e.getMessage(), e);
             return null;
         }
     }

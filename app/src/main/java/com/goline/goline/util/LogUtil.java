@@ -12,7 +12,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 /**
- * Created by wolney on 18/04/17.
+ * Created by Vinícius Lindemberg on 22/05/17.
  */
 
 public class LogUtil {

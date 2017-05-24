@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.facebook.login.LoginManager;
 import com.goline.goline.R;
 import com.goline.goline.util.AlertUtil;
 import com.goline.goline.view.adapter.PagerAdapterActivityMain;
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 case R.id.action_logout:
+                    LoginManager.getInstance().logOut();
                     firebaseAuth.signOut();
                     AlertUtil.toast(getBaseContext(), "Deslogado...");
                     intent = new Intent(MainActivity.this, MainActivity.class);

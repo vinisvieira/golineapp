@@ -13,13 +13,30 @@
         android:id="@+id/imageViewLogo"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="40dp"
         android:src="@drawable/logo_go" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/cadastro_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"
+        android:text="OU"
+        android:textColor="@color/cardview_light_background" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="16sp"
         android:layout_marginBottom="25dp"
         android:text="@string/info_login"
         android:textColor="@color/cardview_light_background" />
@@ -78,17 +95,6 @@
         android:onClick="signIn"
         android:text="@string/bnt_cadastro"
         android:textColor="@color/colorPrimary"
-        android:id="@+id/button"/>
-
-    <Button
-        android:id="@+id/email_sing_in_facebook_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#416BC1"
-        android:onClick="sendLoginFacebookData"
-        android:text="@string/bnt_login_com_facebook_cadastro"
-        android:textColor="#ffffff"
-        android:textStyle="bold"/>
-
+        android:id="@+id/button_cadastro"/>
 
 </LinearLayout>
