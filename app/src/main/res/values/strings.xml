@@ -1,12 +1,16 @@
 <resources>
     <string name="app_name">GoLine</string>
     <string name="app_senha">Senha Consultorio</string>
+
     <string name="action_menu1">Login</string>
     <string name="action_menu2">Cadastre-se</string>
 
+    <!-- fragments -->
     <string name="fragment_consultorio">Fragment Consultório</string>
     <string name="fragment_sobre">Fragment Sobre</string>
     <string name="fragment_contato">Fragment Contato</string>
+
+    <!-- text view -->
     <string name="text_view_contato">Contato</string>
     <string name="text_view_email">Email:</string>
     <string name="text_view_email_address">suporte@goline.com</string>
@@ -18,24 +22,46 @@
     <string name="text_view_consultorio">Consultório</string>
     <string name="text_view_consultorionum">02</string>
     <string name="text_view_senhanum">01</string>
-    <string name="facebook_app_id">1051790581587987</string>
+
+
+    <!-- info login -->
+    <string name="bnt_login">Login</string>
+    <string name="bnt_cadastro">Cadastrar</string>
     <string name="info_login">Informe seus dados de cadastro para continuar.</string>
     <string name="email"> Email</string>
     <string name="nome">Nome</string>
     <string name="telefone">Telefone</string>
     <string name="senha"> Senha</string>
-    <string name="bnt_login">Login</string>
-    <string name="bnt_cadastro">Cadastrar</string>
+
+   <!-- facebook -->
+    <string name="facebook_app_id">1051790581587987</string>
     <string name="bnt_login_com_facebook">Login com facebook</string>
     <string name="bnt_login_com_facebook_cadastro">Entrar com facebook</string>
     <string name="fb_login_protocol_scheme">fb1051790581587987</string>
 
+    <!-- Mapas -->
+    <string name="mapa_zoom_in">Zoom (+)</string>
+    <string name="mapa_zoom_out">Zoom (-)</string>
+    <string name="mapa_localizacao_usuario">Localização do Usuário</string>
+    <string name="mapa_localizacao_clube">Localização do Consultorio</string>
+    <string name="mapa_rota_clube">Rota para Chegar ao Consultorio</string>
+    <string name="mapa_normal">Modo Normal</string>
+    <string name="mapa_satelite">Modo Satélite</string>
+    <string name="mapa_terreno">Modo Terreno</string>
+    <string name="mapa_hibrido">Modo Híbrido</string>
+
+    <string name="texto_img_button">Clique no Icone para verificar a localização do Consultorio </string>
 
     <string-array name="titles_tab">
-        <item>Consultórios</item>
         <item>Sobre</item>
+        <item>Consultórios</item>
         <item>Contato</item>
     </string-array>
     <string name="title_activity_login">LoginActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mapa">MapaActivity</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

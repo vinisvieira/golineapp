@@ -3,6 +3,7 @@ package com.goline.goline.view.adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,10 +56,16 @@ public class ConsultoriosRecyclerView extends RecyclerView.Adapter<ConsultoriosR
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     Consultorio consultorio = mConsultorios[getLayoutPosition()];
                     Intent intent = new Intent(mContext, SenhaActivity.class);
+
                     intent.putExtra("nome", consultorio.getNome());
+                    intent.putExtra("rua" , consultorio.getRua());
+                    intent.putExtra("cidade", consultorio.getCidade());
                     intent.putExtra("senha", consultorio.getId());
+
+
                     mContext.startActivity(intent);
                 }
             });

@@ -56,7 +56,8 @@ public class CadastroUsuarioActivity extends AppCompatActivity implements Fireba
 
     private ProgressDialog progressDialog;
 
-    private HttpHelper httpHelper = new HttpHelper("http://192.168.25.5:8080/goline_2.0/api");
+    private HttpHelper httpHelper = new HttpHelper ("http://192.168.23.47:8080/goline_2.0/api");
+   // ("http://192.168.25.5:8080/goline_2.0/api");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

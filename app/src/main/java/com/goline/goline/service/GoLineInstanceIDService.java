@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class GoLineInstanceIDService extends FirebaseInstanceIdService {
 
-    HttpHelper httpHelper = new HttpHelper("http://192.168.25.5:8080/goline_2.0/api");
+    HttpHelper httpHelper = new HttpHelper("http://192.168.23.47:8080/goline_2.0/api"); //("http://192.168.25.5:8080/goline_2.0/api");
 
     @Override
     public void onTokenRefresh() {
